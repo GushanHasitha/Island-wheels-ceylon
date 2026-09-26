@@ -337,6 +337,19 @@ h6 {
     padding-top: 0 !important;
 }
 
+.hero-header-video .hero-copy h1 {
+    color: #FFFFFF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.hero-header-video .hero-copy p {
+    color: #FFFFFF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 30px;
+}
+
 .hero-header-video > .container {
     position: relative;
     z-index: 2;
@@ -351,6 +364,16 @@ h6 {
     width: 100%;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+}
+
+@media (max-width: 767.98px) {
+    .hero-header-video .hero-copy h1 {
+        font-size: 40px;
+    }
+
+    .hero-header-video .hero-copy p {
+        font-size: 21px;
+    }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
