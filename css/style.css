@@ -367,6 +367,14 @@ h6 {
 }
 
 @media (max-width: 767.98px) {
+    .hero-header-video {
+        background: url(../img/bg-hero.jpg) center center / cover no-repeat;
+    }
+
+    .hero-header-video .hero-video {
+        display: none;
+    }
+
     .hero-header-video .hero-copy h1 {
         font-size: 40px;
     }
