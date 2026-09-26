@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block topbar">
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
@@ -86,12 +86,15 @@
             </div>
         </nav>
 
-        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header hero-header-video">
+            <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+                <source src="video/Cinematic%20Travel%20Film.mp4" type="video/mp4">
+            </video>
             <div class="container py-5">
                 <div class="row justify-content-center py-5">
-                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-                        <h1 class="display-3 text-white mb-3 animated slideInDown">Discover Sri Lanka's Hidden Treasures</h1>
-                        <p class="fs-4 text-white mb-4 animated slideInDown">Experience the magic of the Pearl of the Indian Ocean with our expertly curated tours, stunning destinations, and unforgettable adventures</p>
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center hero-copy">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Discover Sri Lanka</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">Explore Sri Lanka's culture, coastlines, and hidden gems.</p>
                     </div>
                 </div>
             </div>
@@ -116,22 +119,22 @@
                     <p class="mb-4">With years of experience in Sri Lankan tourism, we specialize in creating unforgettable journeys tailored to your interests. Whether you seek cultural immersion, adventure sports, or peaceful relaxation, our dedicated team ensures every moment of your vacation is extraordinary.</p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
-                        </div>
-                        <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Accommodations</p>
                         </div>
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>150 Premium City Tours</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>City Tours</p>
                         </div>
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Chauffeur Guide Service</p>
                         </div>
                     </div>
                     <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
@@ -142,136 +145,66 @@
     <!-- About End -->
 
 
-    <!-- Service Start -->
-    <div class="container-fluid py-5">
+    <!-- Packages Start -->
+    <section class="container-fluid py-5 packages-section">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Services</h6>
-                <h1 class="mb-5">Our Services</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Packages</h6>
+                <h1 class="mb-5">Our Packages</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-mountain text-primary mb-4"></i>
-                            <h5>Adventure Tours</h5>
-                            <p>Experience thrilling adventures from mountain climbing to white water rafting across Sri Lanka's diverse landscapes</p>
-                        </div>
-                    </div>
+                <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="package-tile" href="contact.html" aria-label="Explore Beach Tours">
+                        <img src="img/destination-1.jpg" alt="">
+                        <span>Beach Tours</span>
+                    </a>
                 </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
-                            <h5>Luxury Accommodation</h5>
-                            <p>Carefully selected premium hotels and boutique resorts offering authentic Sri Lankan hospitality and comfort</p>
-                        </div>
-                    </div>
+                <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <a class="package-tile" href="contact.html" aria-label="Explore Honeymoon Tours">
+                        <img src="img/destination-1.jpg" alt="">
+                        <span>Honeymoon Tours</span>
+                    </a>
                 </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-leaf text-primary mb-4"></i>
-                            <h5>Cultural Experiences</h5>
-                            <p>Immerse yourself in Sri Lanka's rich heritage with temple visits, traditional ceremonies, and local artisan workshops</p>
-                        </div>
-                    </div>
+                <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="package-tile" href="contact.html" aria-label="Explore Cultural Tours">
+                        <img src="img/destination-1.jpg" alt="">
+                        <span>Cultural Tours</span>
+                    </a>
                 </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-                            <h5>Culinary Tours</h5>
-                            <p>Discover authentic Sri Lankan flavors with cooking classes, spice garden visits, and traditional meal experiences</p>
-                        </div>
-                    </div>
+                <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <a class="package-tile" href="contact.html" aria-label="Explore Family Tours">
+                        <img src="img/destination-1.jpg" alt="">
+                        <span>Family Tours</span>
+                    </a>
                 </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-camera text-primary mb-4"></i>
-                            <h5>Photography Tours</h5>
-                            <p>Capture Sri Lanka's stunning beauty with guided photography tours to the most photogenic locations</p>
-                        </div>
-                    </div>
+                <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="package-tile" href="contact.html" aria-label="Explore Wildlife Tours">
+                        <img src="img/destination-1.jpg" alt="">
+                        <span>Wildlife Tours</span>
+                    </a>
                 </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-spa text-primary mb-4"></i>
-                            <h5>Wellness Retreats</h5>
-                            <p>Rejuvenate your mind and body with traditional Ayurvedic treatments and meditation retreats in serene locations</p>
-                        </div>
-                    </div>
+                <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <a class="package-tile" href="contact.html" aria-label="Explore Whale Watching">
+                        <img src="img/destination-1.jpg" alt="">
+                        <span>Whale Watching</span>
+                    </a>
                 </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-ship text-primary mb-4"></i>
-                            <h5>Marine Adventures</h5>
-                            <p>Explore Sri Lanka's pristine waters with whale watching, diving expeditions, and coastal boat tours</p>
-                        </div>
-                    </div>
+                <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="package-tile" href="contact.html" aria-label="Explore Adventure Tours">
+                        <img src="img/destination-1.jpg" alt="">
+                        <span>Adventure Tours</span>
+                    </a>
                 </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="fa fa-3x fa-car text-primary mb-4"></i>
-                            <h5>Private Transportation</h5>
-                            <p>Travel in comfort with our fleet of modern vehicles and professional drivers for personalized journeys</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Destination Start -->
-    <div class="container-fluid py-5 destination">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
-                <h1 class="mb-5">Popular Destination</h1>
-            </div>
-            <div class="row g-3">
-                <div class="col-lg-7 col-md-6">
-                    <div class="row g-3">
-                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/destination-1.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Sigiriya</div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/destination-2.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Mirissa</div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="">
-                                <img class="img-fluid" src="img/destination-3.jpg" alt="">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">35% OFF</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Galle</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/destination-4.jpg" alt="" style="object-fit: cover;">
-                        <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div>
-                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Ella</div>
+                <div class="col-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <a class="package-tile" href="contact.html" aria-label="Explore Corporate MICE and Events">
+                        <img src="img/destination-1.jpg" alt="">
+                        <span>Corporate MICE &amp; Events</span>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Destination End -->
+    </section>
+    <!-- Packages End -->
 
 
     <!-- Image Gallery Start -->
